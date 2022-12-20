@@ -26,29 +26,30 @@
                         <div class="grid gap-1 grid-2">
                             <div class="flex flex-col">
                                 <label for="first-name">First Name</label>
-                                <input required type="text" minlength="2" maxlength="20" name="first_name" id="first-name">
+                                <input placeholder="John" required type="text" minlength="2" maxlength="20" name="first_name" id="first-name">
                             </div>
                             <div class="flex flex-col">
                                 <label for="last-name">Last Name</label>
-                                <input required type="text" minlength="2" maxlength="20" name="last_name" id="last-name">
+                                <input placeholder="Doe" required type="text" minlength="2" maxlength="20" name="last_name" id="last-name">
                             </div>
                             <div class="flex flex-col">
                                 <label for="email">Email</label>
-                                <input required type="email" minlength="8" maxlength="30" name="email" id="email">
+                                <input placeholder="johndoe@xyz.com" required type="email" minlength="8" maxlength="30" name="email" id="email">
+                                <div id="email-error-msg"></div>
                             </div>
                             <div class="flex flex-col">
                                 <label for="phone">Phone</label>
-                                <input required type="tel" minlength="10" maxlength="10" name="phone" id="phone">
+                                <input placeholder="+2547XXXXXXXX" required type="tel" minlength="10" maxlength="13" name="phone" id="phone">
                             </div>
                             <div class="flex flex-col">
                                 <label for="password-1">Password</label>
                                 <input required type="password" minlength="12" maxlength="24" name="password_1" id="password-1">
                             </div>
-                            <div class="flex flex-col">
-                                <label for="password-2">COnfirm Password</label>
+                            <div class="flex flex-col">Confirm Password</label>
                                 <input required type="password" minlength="12" maxlength="24" name="password_2" id="password-2">
                             </div>
                         </div>
+                        <div id="psw-error-msg"></div>
                         <button class="btn bg-dark text-light p-1 mt-2" type="submit">Register</button>
                     </form>
                 </div>

@@ -10,6 +10,8 @@
     --light-color:#fff;
     --grey-color:rgb(175, 174, 174);
     --header-height: 4.8rem;
+    --success-color:green;
+    --danger-color:red;
 }
 .bg-dark{
     background-color: var(--dark-color);
@@ -72,10 +74,15 @@ input{
     padding: 0.5rem;
     border-radius: .2rem;
     background-color: transparent;
-    border: solid black 1px;
+    border: solid var(--dark-color) 1px;
 }
-input:invalid{
-    border-color: red;
+input:focus:invalid{
+    border-color: var(--danger-color);
+}
+input[type=email]:valid,
+input[type=tel]:valid,
+input[type=text]:valid{
+    border-color: var(--success-color);
 }
 input[type=text]{
     text-transform: capitalize;
